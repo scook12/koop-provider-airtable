@@ -1,0 +1,13 @@
+{
+  "secrets": {
+    "apiKey": "superSecretKey",
+    "appId": "appIdNumber"
+  },
+  "params": {
+    "tableName": "myTable",
+    "viewName": "Grid view",
+    "maxRecords": 100,
+    "longitudeFieldName": "longitude",
+    "latitudeFieldName": "latitude"
+  }
+}
