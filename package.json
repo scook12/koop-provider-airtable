@@ -1,11 +1,19 @@
 {
   "name": "koop-provider-airtable",
   "version": "0.0.1",
+  "author": "Sam Cook",
+  "license": "MIT",
   "description": "A koop.js provider for the Airtable API",
+  "main": "src/index.js",
   "dependencies": {
     "airtable": "^0.9.0"
   },
   "devDependencies": {
+    "koop": "^4.0.1",
     "tape": "^5.0.1"
+  },
+  "scripts": {
+    "start": "koop serve",
+    "test": "tape test/*.js"
   }
 }

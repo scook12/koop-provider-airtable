@@ -1,6 +1,7 @@
 const test = require('tape')
 const Model = require('../src/model')
 const model = new Model()
+const Koop = require('koop')
 
 test('should fetch from api and translate features', t => {
   model.getData({}, (err, geojson) => {
@@ -17,4 +18,11 @@ test('should fetch from api and translate features', t => {
     // t.equal(feature.properties.expires, new Date(1484268019000).toISOString(), 'translates time field correctly')
     t.end()
   })
+})
+
+test('should register with koop instance and serve features', t => {
+  const koop = new Koop()
+  koop.register(model, {})
+  t.ok(koop.providers)
+  t.end()
 })

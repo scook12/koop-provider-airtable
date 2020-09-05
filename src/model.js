@@ -7,7 +7,7 @@ const base = new Airtable({ apiKey: config.secrets.apiKey }).base(config.secrets
 const table = base(config.params.tableName);
 
 // TODO: Add support for non-point geometries (polyline, polygon, etc)
-function Model() { }
+function Model(koop) { }
 
 Model.prototype.getData = function (req, callback) {
   try {

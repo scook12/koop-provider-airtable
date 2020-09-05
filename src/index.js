@@ -1,4 +1,4 @@
-export default provider = {
+const provider = {
   type: 'provider',
   name: 'koop-provider-airtable',
   hosts: false,
@@ -6,3 +6,5 @@ export default provider = {
   Model: require('./model'),
   version: require('../package.json').version
 }
+
+module.exports = provider
